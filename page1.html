@@ -1,39 +1,73 @@
 <html>
 <head>
-  <title>World's worst website Page 1</title>
-  <link rel="stylesheet" href="styles.css">
+    <title>World's worst website Page 1</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <style type="text/css">
+        .scream{
+            font-family: 'Raleway', sans-serif;
+            text-align: left;
+            font-size: 48px;
+        }
+    </style>
+    <script type="text/javascript">	
+        function screamBinch() {
+            let screamText = document.querySelector('.scream');
+            screamText.textContent = screamText.textContent + 'H' + '\n';
+        }
+        
+        setInterval(screamBinch, 40);
+        function openHomepage() {
+            var win = window.open("./home.html", '_blank');
+            win.focus();
+        }
+
+        function changeSeconds() {
+            console.log("changeSeconds")
+            let secondsText = document.querySelector('#seconds');
+            curNumber = parseInt(secondsText.textContent)
+            if (curNumber === 0) {
+                let notion = document.querySelector('.notion');
+                notion.style.display = "None";
+                let toolate = document.querySelector('#toolate');
+                toolate.style.display = "block";
+                openHomepage = () => {}
+            }
+            secondsText.textContent = curNumber - 1;
+        }
+        const secondsInterval = setInterval(changeSeconds, 1000);
+    </script>
 </head>
 <body class="page1">
     <div class="scroll-left">
         <div>PAGE 1 OF THE WORLD'S WORST BUT SPICIEST WEBSITE</div>
     </div>
-    <div >
-    <div class="leftNavigation page2 page2Gif">
-        <a href="./page2.html" title="LINK TO PAGE 2">
+    <a href="./page2.html" title="LINK TO PAGE 2">
+        <div class="leftNavigation page2 page2Gif">
             <div>
-                <h2>HOT FOODS</h2>
+                <h2>RECIPES</h2>
             </div>
             <div>
                 <img class="arrow" src="./imgs/leftArrow.png">
             </div>
-        </a>
-    </div>
-    <div class="rightNavigation home homeGif">
-        <a href="./home.html" title="LINK TO HOMEPAGE">
+        
+        </div>
+    </a>
+    <a href="./home.html" title="LINK TO HOMEPAGE">
+        <div class="rightNavigation home homeGif">
             <div>
                 <h2>HOMEPAGE</h2>
             </div>
             <div>
                 <img class="arrow" src="./imgs/leftArrow.png">
             </div>
-        </a>
-        
-    </div>
+        </div>
+    </a>
     
     <div class="center page1Gif" id="page1Div">
         <h1><a href="./page1.html" title="LINK TO PAGE 1">REACTIONS</a></h1>
         <div>
-            <p> IT AINT A JOKE</p>
+            <p class="overview"> IT AINT A JOKE</p>
         </div>
         <div class="marginAuto">
             <img class="leftImg" src="https://media.giphy.com/media/KbAbh6CbK4r5dyaZ4i/giphy.gif">
@@ -55,7 +89,21 @@
             BUY SAUCES
         </a>
     </div>
-  
+    <div class="container" onclick="openHomepage()">
+	    <text class="scream"> A </text>
+    </div>
+    <div class="notion">
+        <div>
+	        <span id="id1">Press on</span><span id="id2">Screem</span><span id="id3">Before it's too late</span>
+        </div>
+        <div>
+	        <span id="id4">Seconds left: </span><span id="seconds">30</span>
+        </div>
+    </div>
+    <div id="toolate" style="display: None">
+        too late You are trapped on this page
+    </div>
+    </div>
       
 </div>
     
