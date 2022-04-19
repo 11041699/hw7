@@ -1,0 +1,201 @@
+@font-face {
+    font-family: "blazed";
+    src: url("./Blazed.ttf");
+}
+
+body{
+    margin: 0px;
+    font-family: "blazed";
+    color: #1eff00;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 1em black;
+}
+
+.homeGif {
+    background-image: url('https://media.giphy.com/media/fHuAFxfYtTyTX9j8l9/giphy.gif');
+}
+.page1Gif {
+    background-image: url('https://media.giphy.com/media/lcMOOkmShsiDs7AD2j/giphy.gif');
+}
+.page2Gif {
+    background-image: url('https://media.giphy.com/media/xT9IgOs1mJhBdSxZYc/giphy.gif');
+}
+
+
+
+
+.center {
+    margin: 5vh 5vw;
+    background-size: 10% 20%;
+    width: 90%;
+    height: 90%;
+}
+/* .center div  */
+
+.leftNavigation {
+    position: relative;
+    background-color: aqua;
+    height: 90%;
+    width: 5%;
+    float: left;
+    background-size: 100%;
+    background-position: center;
+}
+
+.leftNavigation h2 {
+    float: right;
+    position: relative;
+    top: 10px;
+}
+
+.rightNavigation {
+    position: relative;
+    background-color: aqua;
+    height: 90%;
+    width: 5%;
+    float: right;
+    background-size: 100%;
+    background-position: center;
+}
+
+.rightNavigation h2 {
+    float: left;
+    position: relative;
+    top: 10px;
+}
+
+.rightNavigation img {
+    transform: rotateY(180deg);
+}
+.arrow {
+    width: 100%;
+    object-fit: contain;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.page1 {
+    background-color: #fecc33;
+}
+
+.page2 {
+    background-color: #143bef;
+}
+
+.home {
+    background-color: #fe5a17;
+}
+
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    text-orientation: upright;
+    writing-mode: vertical-rl;
+}
+
+@font-face {
+    font-family: "blazed";
+    src: url("./Blazed.ttf");
+}
+
+
+.scroll-left {
+    height: 20px;	
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    background: yellow;
+    border: 1px solid orange;
+   }
+   .scroll-left div {
+    font-family: "blazed";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    /* line-height: 50px; */
+    text-align: center;
+    /* Starting position */
+    /* transform:translateX(-1000px); */
+    /* Apply animation to this element */
+    animation: scroll-left 30s linear infinite;
+   }
+   /* Move it (define the animation) */
+   @keyframes scroll-left {
+    0%   {
+    transform: translateX(100%); 		
+    }
+    100% {
+    transform: translateX(-100%); 
+    }
+   }
+
+.bottom {
+    padding:0px;
+    margin:0px;
+    position: absolute;
+    bottom: 10px;
+    font-size: 30px;
+}
+
+.bottom img {
+    height: 25px;
+}
+.youtube {
+    left: 50px;
+}
+.store {
+    right: 50px;
+}
+.center p {
+    background-color: yellow;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px 20px;
+    text-align: center;
+    border-color: #1eff00;
+    border-style: solid;
+    border-width: 5px;
+}
+.centerImg {
+    position: relative;
+    top: 25px;
+    height: 200px;
+    border-color: #1eff00;
+    border-style: dotted;
+    border-width: 10px;
+
+}
+.leftImg {
+    position: relative;
+    top: 25vh;
+    right: 100px;
+    height: 10%;
+    border-color: #1eff00;
+    border-style: dashed;
+    border-width: 10px;
+}
+.rightImg {
+    position: relative;
+    top:20vh;
+    height: 10%;
+    left: 100px;
+    border-color: #1eff00;
+    border-style: double;
+    border-width: 10px;
+}
+.marginAuto {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
