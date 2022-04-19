@@ -154,35 +154,41 @@ h2 {
 .centerImg {
     position: relative;
     top: 25px;
+    left: 20%;
     height: 200px;
     border-color: #1eff00;
     border-style: dotted;
     border-width: 20px;
+    vertical-align: top;
 
 }
 .leftImg {
     position: relative;
     top: 25vh;
-    right: 100px;
-    height: 100px;
+    left: 15%;
+    height: 200px;
     border-color: #1eff00;
     border-style: dashed;
     border-width: 5px;
     z-index:2;
+    vertical-align: top;
 }
 .rightImg {
     position: relative;
     top:20vh;
     height: 200px;
-    left: 100px;
+    left: 30%;
     border-color: #1eff00;
     border-style: double;
     border-width: 80px;
     z-index:2;
+    vertical-align: top;
+}
+.overviewdiv {
+    position: relative;
 }
 .marginAuto {
-    display: flex;
-    justify-content: center;
+    position: relative;
 }
 
 .danger {
@@ -228,9 +234,13 @@ strong {
     left: 200px;
     background-color: white;
     z-index:5;
-    animation: blinker 3s linear infinite;
+    animation: blinker 5s linear infinite;
 }
-
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+}
 #toolate {
     position: fixed;
     bottom: 400px;
@@ -274,12 +284,6 @@ strong {
     background-color: rgb(230, 226, 173);
     font-family: "Herculanum";
 }
-  
-  @keyframes blinker {
-    50% {
-      opacity: 0;
-    }
-  }
 .third-li {
     position: relative;
     z-index: 2;
