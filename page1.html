@@ -2,28 +2,19 @@
 <head>
     <title>World's worst website Page 1</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <style type="text/css">
-        .scream{
-            font-family: 'Raleway', sans-serif;
-            text-align: left;
-            font-size: 48px;
-        }
-    </style>
     <script type="text/javascript">	
         function screamBinch() {
             let screamText = document.querySelector('.scream');
             screamText.textContent = screamText.textContent + 'H' + '\n';
         }
-        
-        setInterval(screamBinch, 40);
+        setInterval(screamBinch, 70);
+
+
         function openHomepage() {
             var win = window.open("./home.html", '_blank');
-            win.focus();
         }
 
         function changeSeconds() {
-            console.log("changeSeconds")
             let secondsText = document.querySelector('#seconds');
             curNumber = parseInt(secondsText.textContent)
             if (curNumber === 0) {
@@ -32,6 +23,7 @@
                 let toolate = document.querySelector('#toolate');
                 toolate.style.display = "block";
                 openHomepage = () => {}
+                clearInterval(secondsInterval)
             }
             secondsText.textContent = curNumber - 1;
         }
@@ -103,10 +95,5 @@
     <div id="toolate" style="display: None">
         too late You are trapped on this page
     </div>
-    </div>
-      
-</div>
-    
-</div>  
 </body>
 </html>
