@@ -147,18 +147,14 @@ h2 {
     margin-right: 10%;
     padding: 10px 20px;
     text-align: center;
-    border-color: #1eff00;
-    border-style: solid;
-    border-width: 20px;
+    border: 20px  solid #1eff00
 }
 .centerImg {
     position: relative;
     top: 25px;
     left: 10vw;
     width: 20vw;
-    border-color: #1eff00;
-    border-style: dotted;
-    border-width: 20px;
+    border: 20px dotted #1eff00;
     vertical-align: top;
 
 }
@@ -200,12 +196,15 @@ h2 {
 .first-li p {
     position: relative;
     z-index:4;
+    padding: 30px 40px;
 }
 
 .second-li {
     position: relative;
-    bottom: 50px;
+    bottom: 100px;
     z-index:5;
+    padding: 10px 15px 8px 14px;
+
 }
 
 
@@ -213,6 +212,7 @@ strong {
     font-family: "Brush Script MT";
     font-size: 30;
     color:white;
+    padding: 5px;
 }
 .recipe {
     position: absolute;
